@@ -1,0 +1,60 @@
+
+
+
+*************   C Start   *********************CCCCCCCCCCCCCCC
+ ##   C wait to event from A    ## 
+ *************   B Start   *********************BBBBB
+ ##   B wait to an event from A    ## 
+ *************   A Start   *********************AAAAAAAAAA
+ ##   A acquire m1    ## AAAAAAAAAA
+ ##   A sent event to C    ## 
+ ##   A sent event to B    ## 
+ ##   C received event from A    ## CCCCCCCCCCCCCCC
+ ##   C acquire m1    ## AAAAAAAAAA
+ ##   A released m1    ## 
+CCCCCCCCCCCCCCC
+ ##   C released m1    ## 
+*************   C Finish   *********************
+ ##   B received event from A    ## BBBBB
+ *************   B Finish   *********************AAAAAAAAAA
+ *************   A Finish   *********************
+
+
+*************   C Start   *********************CCCCCCCCCCCCCCC
+ ##   C wait to event from A    ## 
+ *************   B Start   *********************BBBBB
+ ##   B wait to an event from A    ## 
+ *************   A Start   *********************AAAAAAAAAA
+ ##   A acquire m1    ## AAAAAAAAAA
+ ##   A sent event to C    ## 
+ ##   A sent event to B    ## 
+ ##   C received event from A    ## CCCCCCCCCCCCCCC
+ ##   C acquire m1    ## AAAAAAAAAA
+ ##   A released m1    ## 
+CCCCCCCCCCCCCCC
+ ##   C released m1    ## 
+*************   C Finish   *********************
+ ##   B received event from A    ## BBBBB
+ *************   B Finish   *********************AAAAAAAAAA
+ *************   A Finish   *********************
+
+
+*************   C Start   *********************CCCCCCCCCCCCCCC
+ ##   C wait to event from A    ## 
+ *************   B Start   *********************BBBBB
+ ##   B wait to an event from A    ## 
+ *************   A Start   *********************AAAAAAAAAA
+ ##   A acquire m1    ## AAAAAAAAAA
+ ##   A sent event to C    ## 
+ ##   A sent event to B    ## 
+ ##   C received event from A    ## CCCCCCCCCCCCCCC
+ ##   C acquire m1    ## AAAAAAAAAA
+ ##   A released m1    ## 
+CCCCCCCCCCCCCCC
+ ##   C released m1    ## 
+*************   C Finish   *********************
+ ##   B received event from A    ## BBBBB
+ *************   B Finish   *********************AAAAAAAAAA
+ *************   A Finish   *********************
+
+Exit : finish

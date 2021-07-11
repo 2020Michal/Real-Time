@@ -1,0 +1,111 @@
+
+
+
+*************   C Start   *********************CCCCCCCCCCCCCCC
+ ##   C wait to event from A    ## 
+ *************   B Start   *********************BBBBB
+ ##   B wait to an event from A    ## 
+ *************   A Start   *********************AAAAAAAAAA
+ ##   A acquire m1    ## AAAAAAAAAA
+ ##   A sent event to C    ## 
+ ##   A sent event to B    ## 
+ ##   C received event from A    ## CCCCCCCCCCCCCCC
+ ##   C acquire m1    ## AAAAAAAAAA
+ ##   A released m1    ## 
+CCCCCCCCCCCCCCC
+ ##   C released m1    ## 
+*************   C Finish   *********************
+ ##   B received event from A    ## BBBBB
+ *************   B Finish   *********************AAAAAAAAAA
+ *************   A Finish   *********************
+*************   F Start   *********************FFFFFFFFFFFFFFF
+ ##   F wait to event from D    ## 
+ *************   E Start   *********************EEEEE
+ ##   E wait to an event from D    ## 
+ *************   D Start   *********************DDDDDDDDDD
+ ##   D acquire m2    ## DDDDDDDDDD
+ ##   D sent event to F    ## 
+ ##   D sent event to E    ## DD
+ ##   F received event from D    ## FFFFFFFFFFFFFFF
+ ##   F acquire m2    ## DDDDDDDD
+ ##   D released m2    ## 
+FFFFFFFFFFFFFFF
+ ##   F released m2    ## 
+*************   F Finish   *********************
+ ##   E received event from D    ## EEEEE
+ *************   E Finish   *********************DDDDDDDDDD
+ *************   D Finish   *********************
+
+
+*************   C Start   *********************CCCCCCCCCCCCCCC
+ ##   C wait to event from A    ## 
+ *************   B Start   *********************BBBBB
+ ##   B wait to an event from A    ## 
+ *************   A Start   *********************AAAAAAAAAA
+ ##   A acquire m1    ## AAAAAAAAAA
+ ##   A sent event to C    ## 
+ ##   A sent event to B    ## 
+ ##   C received event from A    ## CCCCCCCCCCCCCCC
+ ##   C acquire m1    ## AAAAAAAAAA
+ ##   A released m1    ## 
+CCCCCCCCCCCCCCC
+ ##   C released m1    ## 
+*************   C Finish   *********************
+ ##   B received event from A    ## BBBBB
+ *************   B Finish   *********************AAAAAAAAAA
+ *************   A Finish   *********************
+*************   F Start   *********************FFFFFFFFFFFFFFF
+ ##   F wait to event from D    ## 
+ *************   E Start   *********************EEEEE
+ ##   E wait to an event from D    ## 
+ *************   D Start   *********************DDDDDDDDDD
+ ##   D acquire m2    ## DDDDDDDDDD
+ ##   D sent event to F    ## 
+ ##   D sent event to E    ## 
+ ##   F received event from D    ## FFFFFFFFFFFFFFF
+ ##   F acquire m2    ## DDDDDDDDDD
+ ##   D released m2    ## 
+FFFFFFFFFFFFFFF
+ ##   F released m2    ## 
+*************   F Finish   *********************
+ ##   E received event from D    ## EEEEE
+ *************   E Finish   *********************DDDDDDDDDD
+ *************   D Finish   *********************
+
+
+*************   C Start   *********************CCCCCCCCCCCCCCC
+ ##   C wait to event from A    ## 
+ *************   B Start   *********************BBBBB
+ ##   B wait to an event from A    ## 
+ *************   A Start   *********************AAAAAAAAAA
+ ##   A acquire m1    ## AAAAAAAAAA
+ ##   A sent event to C    ## 
+ ##   A sent event to B    ## 
+ ##   C received event from A    ## CCCCCCCCCCCCCCC
+ ##   C acquire m1    ## AAAAAAAAAA
+ ##   A released m1    ## 
+CCCCCCCCCCCCCCC
+ ##   C released m1    ## 
+*************   C Finish   *********************
+ ##   B received event from A    ## BBBBB
+ *************   B Finish   *********************AAAAAAAAAA
+ *************   A Finish   *********************
+*************   F Start   *********************FFFFFFFFFFFFFFF
+ ##   F wait to event from D    ## 
+ *************   E Start   *********************EEEEE
+ ##   E wait to an event from D    ## 
+ *************   D Start   *********************DDDDDDDDDD
+ ##   D acquire m2    ## DDDDDDDDDD
+ ##   D sent event to F    ## 
+ ##   D sent event to E    ## 
+ ##   F received event from D    ## FFFFFFFFFFFFFFF
+ ##   F acquire m2    ## DDDDDDDDDD
+ ##   D released m2    ## 
+FFFFFFFFFFFFFFF
+ ##   F released m2    ## 
+*************   F Finish   *********************
+ ##   E received event from D    ## EEEEE
+ *************   E Finish   *********************DDDDDDDDDD
+ *************   D Finish   *********************
+
+Exit : finish
