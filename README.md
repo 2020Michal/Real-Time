@@ -29,9 +29,11 @@ APP77.CPP
 An application to demonstrate SMARTS77 functioning.
 
 Part 1
+
 Implementation of activating cyclic processes using Round Robin and EDF algorithms.
 
 Part 2
+
 Implementation of activating cyclic processes using RMS,
 Implementation of Mutex (Acquire Release ect.).
 
@@ -39,6 +41,7 @@ Part 3
 Solving the Unbounded priority inversion problem by the implementation of priority-inheritance
 
 Part 4
+
 Solving the Unbounded priority inversion problem by the implementation of Recursive Priority Inheritance Protocol 
 
 Unbounded priority inversion and priority-inheritance
