@@ -1,7 +1,5 @@
-# Real-Time
-This project implement parts of RTOS
-
-files explainations:
+This project implements parts of RTOS
+files explanations:
 
 SMARTS77.H
 the main header file. This file includes Event class, Mutex class, Task class, and Parallelism class. Parallelism class includes all the tasks of the system and implements the tasks schedule.
@@ -10,7 +8,7 @@ SMARTS77.CPP
 SMARTS77.H class body.
 
 SchedAlgo77.CPP
-short-term scheduler algorithms: RoundRobin, EDF, RMS, FPS.
+short-term scheduler algorithms: Round Robin, EDF, RMS, FPS.
 
 EXTERN77.CPP
 This class implements the external function of SMART system.
@@ -40,3 +38,5 @@ Part 3
 Solving the Unbounded priority inversion problem by the implementation of priority-inheritance
 
 Unbounded priority inversion and priority-inheritance
+
+for mire explanations: https://www.embedded.com/how-to-use-priority-inheritance/
